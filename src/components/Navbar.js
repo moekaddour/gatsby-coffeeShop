@@ -30,7 +30,7 @@ export default class Navbar extends Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav className="navbar navbar-expand-sm navbar-light bg-light ">
         <Link className="navbar-brand" to="/">
           <img
             src={Logo}
@@ -54,7 +54,7 @@ export default class Navbar extends Component {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={this.state.css} id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto mx-auto">
             {this.state.links.map(link => {
               return (
                 <li key={link.id} className="nav-item active">
